@@ -82,12 +82,26 @@ local MUMBLERACETYPES = {
     Sylvari = 4
 }
 
+---@enum MumbleProfessionType
+local MUMBLEPROFESSIONTYPES = {
+    Guardian = 1,
+    Warrior = 2,
+    Engineer = 3,
+    Ranger = 4,
+    Thief = 5,
+    Elementalist = 6,
+    Mesmer = 7,
+    Necromancer = 8,
+    Revenant = 9
+}
+
 ---@class MumblePlayerCharacter
 ---@field CurrentMount MumbleMountType # Indicates the player's current mount.
 ---@field Forward Vector3 # The character's forward vector.
 ---@field IsCommander boolean # Indicates if the player has a commander tag enabled.
 ---@field IsInCombat boolean # Indicates if the player is actively in combat.
 ---@field Name string # The character name.
+---@field Profession MumbleProfessionType # The ID of the character's profession
 ---@field Position Vector3 # The character's position.
 ---@field Race MumbleRaceType # The character's race.
 ---@field Specialization integer # The ID of the character's specialization.
