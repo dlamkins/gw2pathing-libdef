@@ -40,6 +40,14 @@ function Trail.Unfocus(this) end
 ---Removes the trail.
 function Trail.Remove(this) end
 
+---Sets the texture of the trail.
+---@param texturePath string # The relative path to the texture (relative to the root of the marker pack).
+function Trail.SetTexture(this, texturePath) end
+
+---Sets the points for the trail.
+---@param points table # table of Vector3.
+function Trail.SetPoints(this, points) end
+
 ---Returns any matching behavior by its type name.
 ---@param behaviorName string # The name of the behavior type.
 ---@return IBehavior behavior

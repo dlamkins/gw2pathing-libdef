@@ -11,3 +11,8 @@ function Pack.Require(this, path) end
 ---@param attributes? table # A dictionary of attributes.
 ---@return Marker marker # The created marker.
 function Pack.CreateMarker(this, attributes) end
+
+---Creates a new trail within the marker pack.
+---@param attributes? table # A dictionary of attributes.
+---@return Trail trail # The created trail.
+function Pack.CreateTrail(this, attributes) end
